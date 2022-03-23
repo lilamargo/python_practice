@@ -3,7 +3,7 @@ import random
 random_integer = random.randint(1, 10)
 print(random_integer)
 
-# El Random de tipo random, considera los números del 0.000... al 0.999...
+# El Random de tipo float, considera los números del 0.000... al 0.999...
 random_float = random.random()
 
 # Pero si quiero que considere hasta cierto número, lo multiplico por este. Por ejemplo, por 5 me llegarán
@@ -22,6 +22,6 @@ def cara_cruz():
 
 def start():
     print("\nFlip the coin and you will know your luck with Heads or Tails\n")
-    option = (input("\n Press Enter to continue... ").lower())
+    input("\n Press Enter to continue... ").lower()
     cara_cruz()
 start()
